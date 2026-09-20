@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html lang="fr" data-fr-scheme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cellule d'aide aux blessés de l'armée de terre</title>
+  <style>
+    html, body, button, input, select, textarea, [class*="fr-"] {
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+  .fr-header__service-title{
+    font-size: 1.5rem !important;
+  }
+
+  .fr-footer{
+    position:relative;
+    bottom:0;}
+
+  .fr-accordion__btn{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    font-size: 1.25rem !important;
+    font-weight: bold !important;
+  }
+
+  .cabat-block{
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .cabat-block__label{
+    border: 1px solid #929292;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .cabat-block__icons{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .cabat-block__icon-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .cabat-block__icon-link img{
+    margin-bottom: 0.5rem;
+  }
+
+  .cabat-block__icon-link:hover span,
+  .cabat-block__icon-link:focus span{
+    text-decoration: underline;
+  }
+
+  .cabat-tile{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .fr-footer__content-link{
+    padding: 1rem;}
+  </style>
+
+  <!--
+    Le dossier "dsfr" (contenu de dist/ du package @gouvfr/dsfr) doit être téléversé
+    dans une bibliothèque SharePoint, à côté de cette page (ex. Site Assets/dsfr/).
+    Adapte les chemins ci-dessous si besoin.
+  -->
+  <link rel="stylesheet" href="dsfr/dsfr.min.css">
+  <link rel="apple-touch-icon" href="dsfr/favicon/apple-touch-icon.png">
+  <link rel="icon" href="dsfr/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="dsfr/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Liens d'évitement -->
+  <div class="fr-skiplinks">
+    <nav class="fr-container" role="navigation" aria-label="Accès rapide">
+      <ul class="fr-skiplinks__list">
+        <li><a class="fr-link" href="#contenu">Contenu</a></li>
+        <li><a class="fr-link" href="#nav">Menu</a></li>
+        <li><a class="fr-link" href="#footer">Pied de page</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- En-tête -->
+  <header role="banner" class="fr-header">
+    <div class="fr-header__body">
+      <div class="fr-container">
+        <div class="fr-header__body-row">
+          <div class="fr-header__brand fr-enlarge-link">
+            <div class="fr-header__brand-top">
+              <div class="fr-header__logo">
+                <p class="fr-logo">République<br>Française</p>
+              </div>
+              <div class="fr-header__navbar">
+                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" id="button-menu" title="Menu">Menu</button>
+              </div>
+            </div>
+            <div class="fr-header__service">
+              <a href="accueil.html" title="Accueil - Cellule d'aide aux blessés">
+                <p class="fr-header__service-title">Cellule d'aide aux blessés de l'armée de terre</p>
+              </a>
+              <p class="fr-header__service-tagline">Communauté de travail interne de la CABAT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main role="main" id="contenu">
+    <!-- fil d'Ariane (commenté temporairement) : -->
+    <!--<div class="fr-container">
+      <nav role="navigation" class="fr-breadcrumb" aria-label="vous êtes ici :">
+        <button class="fr-breadcrumb__button" aria-expanded="false" aria-controls="breadcrumb-1">Voir le fil d'Ariane</button>
+        <div class="fr-collapse" id="breadcrumb-1">
+          <ol class="fr-breadcrumb__list">
+            <li><a class="fr-breadcrumb__link" aria-current="page">Accueil</a></li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+  </-->
+
+    <div class="fr-container fr-mb-6w">
+      <!--
+      <div class="fr-callout fr-mb-6w">
+        <h3 class="fr-callout__title">Information importante</h3>
+        <p class="fr-callout__text">Utilisez ce bloc pour mettre en avant un message clé.</p>
+        <a class="fr-btn" href="#">En savoir plus</a>
+      </div>-->
+      <div class="fr-accordions-group">
+      <!-- accordéon n°1 -->
+      <section class="fr-accordion">
+        <h3 class="fr-accordion__title">
+        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-1">État major</button>
+        </h3>
+        <div id="accordion-1" class="fr-collapse">
+          <div class="fr-grid-row fr-grid-row--gutters">
+            <!-- Secrétariat -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Secrétariat</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Stages -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Stages</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Bureau blessés -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Bureau blessés</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Familles endeuillées -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Familles endeuillées</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ASA -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">ASA</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Pilotage -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Pilotage</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Juriste -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Juriste</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Commandement -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Commandement</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- accordéon n°2 -->
+      <section class="fr-accordion">
+        <h3 class="fr-accordion__title">
+        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-2">Zones terre</button>
+        </h3>
+        <div id="accordion-2" class="fr-collapse">
+          <div class="fr-grid-row fr-grid-row--gutters">
+            <!-- Rennes -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Rennes</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Paris -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Paris</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Metz -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Metz</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Bordeaux -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Bordeaux</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Marseille -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Marseille</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Lyon -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-4">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Lyon</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\system\padlock.png" alt="" width="64" height="64">
+                    <span>Dossier privé</span>
+                  </a>
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\leisure\catalog.png" alt="" width="64" height="64">
+                    <span>Partage CABAT</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- accordéon n°3 -->
+      <section class="fr-accordion">
+        <h3 class="fr-accordion__title">
+        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-3">Vie courante</button>
+        </h3>
+        <div id="accordion-3" class="fr-collapse">
+          <div class="fr-grid-row fr-grid-row--gutters">
+            <!-- SPA -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">SPA</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Textes Règlementaires -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Textes Règlementaires</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Avec nos blessés -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Avec nos blessés</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Agenda -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">Agenda</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- PHS - 14 juillet -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">PHS – 14 juillet</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- PHS - 11 novembre -->
+            <div class="fr-col-12 fr-col-sm-6 fr-col-md-3">
+              <div class="cabat-block">
+                <p class="cabat-block__label">PHS – 11 novembre</p>
+                <div class="cabat-block__icons">
+                  <a class="cabat-block__icon-link" href="https://www.google.fr">
+                    <img src="\dsfr\artwork\pictograms\document\document-signature.png" alt="" width="64" height="64">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- accordéon n°4 -->
+      <section class="fr-accordion">
+        <h3 class="fr-accordion__title">
+        <button type="button" class="fr-accordion__btn" aria-expanded="false" aria-controls="accordion-4">Liens utiles</button>
+        </h3>
+        <div id="accordion-4" class="fr-collapse">
+          <div class="fr-grid-row fr-grid-row--gutters">
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">Solferino</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">concerto</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">MNBF</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">INTRADEF</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">INTRATERRE</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">QLIK</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">DRHAT</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fr-col-12 fr-col-sm-6 fr-col-md-3 cabat-tile">
+          <div class="fr-card fr-enlarge-link">
+            <div class="fr-card__body">
+              <div class="fr-card__content">
+                <h3 class="fr-card__title"><a href="https://www.google.fr">MEDROFIM</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        </div>
+      </section>
+      </div>
+
+      <h2>
+
+      </h2>
+      
+    </div>
+  </main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Pied de page -->
+  <footer class="fr-footer" role="contentinfo" id="footer">
+    <div class="fr-container">
+      <div class="fr-footer__body">
+        <div class="fr-footer__brand fr-enlarge-link">
+          <p class="fr-logo">République<br>Française</p>
+        </div>
+        <div class="fr-footer__content">
+          <!-- page réalisée par ADC GUIGUE Franck et son fils Aurélien  ;) -->
+          <p class="fr-footer__content-link"><a href="https://google.fr" target="_blank" rel="noopener">intradef</a></p>
+          <p class="fr-footer__content-link"><a href="https://google.fr" target="_blank" rel="noopener">intraterre</a></p>
+          <p class="fr-footer__content-link"><a href="https://google.fr" target="_blank" rel="noopener">Annudef</a></p>
+          
+        </div>
+      </div>
+      <div class="fr-footer__bottom">
+        
+        <div class="fr-footer__bottom-copy">
+          <p>Sauf mention contraire, tous les contenus de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener">licence etalab-2.0</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts DSFR -->
+  <script type="module" src="dsfr/dsfr.module.min.js"></script>
+  <script type="text/javascript" nomodule src="dsfr/dsfr.nomodule.min.js"></script>
+</body>
+</html>
